@@ -1,11 +1,10 @@
 // Require Node's http module and assign it to a variable
 var http = require('http')
 
-// Create a new server that just says "Hi!!" at every route
 var server = http.createServer(function (request, response) {
   if (request.url === '/') {
     response.end(
-      '<h1>Home</h1>' +
+      '<h1>Homepage</h1>' +
       '<h2>Hello World</h2>'
     )
   } else if (request.url === '/random-joke') {
@@ -42,7 +41,8 @@ var server = http.createServer(function (request, response) {
   } else {
     response.end(
       '<h1>Page Not Found</h1>' +
-      'The requested URL http://localhost:' + port +
+      'The requested URL http://' +
+      request.url +
       '/ was not found on this server. That\'s all we know.'
     )
   }
