@@ -5,7 +5,12 @@ var server = http.createServer(function (request, response) {
   if (request.url === '/') {
     response.end(
       '<h1>Homepage</h1>' +
-      '<h2>Hello World</h2>'
+      '<h2>Hello World</h2>' +
+      '<ul>' +
+      '<li><a href="http://samanthaxu-js-server-intro.herokuapp.com/random-jokes">Jokes</a></li>' +
+      '<li><a href="http://samanthaxu-js-server-intro.herokuapp.com/cuteness">Something Cute</a></li>' +
+      '</ul>'
+
     )
   } else if (request.url === '/random-joke') {
     var choice = Math.random()
@@ -44,6 +49,7 @@ var server = http.createServer(function (request, response) {
       'The requested URL http://samanthasamanthaxu-js-server-intro.herokuapp.com' +
       request.url +
       '/ was not found on this server. That\'s all we know.'
+      '<a href="http://samanthaxu-js-server-intro.herokuapp.com/">Home</a>'
     )
   }
 })
