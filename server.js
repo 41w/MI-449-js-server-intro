@@ -7,7 +7,7 @@ var server = http.createServer(function (request, response) {
       '<h1>Homepage</h1>' +
       '<h2>Hello World</h2>' +
       '<ul>' +
-      '<li><a href="http://samanthaxu-js-server-intro.herokuapp.com/random-jokes">Jokes</a></li>' +
+      '<li><a href="http://samanthaxu-js-server-intro.herokuapp.com/random-joke">Jokes</a></li>' +
       '<li><a href="http://samanthaxu-js-server-intro.herokuapp.com/cuteness">Something Cute</a></li>' +
       '</ul>'
 
