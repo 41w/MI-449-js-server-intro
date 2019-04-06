@@ -46,7 +46,7 @@ var server = http.createServer(function (request, response) {
     response.end(
       '<h1>Page Not Found</h1>' +
       'The requested URL' + request.url +
-      '/ was not found on this server. That\'s all we know. <br>' +
+      ' was not found on this server. That\'s all we know. <br>' +
       '<a href="/">Home</a>'
     )
   }
